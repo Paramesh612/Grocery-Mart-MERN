@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../Images/images_login\ page/BG for login _ resized.jpg");
     background-size: cover;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .top_links{
@@ -11,6 +11,9 @@ body{
     color: #fff;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* #forgotpasswordbox {
+  display: none;
+} */
 
 .navbar{
     position: absolute;
@@ -72,7 +75,7 @@ body{
   }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-#loginbox,#registerbox{
+#loginbox,#registerbox,#forgotpasswordbox{
     backdrop-filter: blur(20px);
     border: solid 1px #fff;
     height: 420px;

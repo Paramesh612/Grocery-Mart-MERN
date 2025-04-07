@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .inputbox {
+        margin-bottom: 20px;
+        transform: translateX(-12px);
+        border-bottom: solid 2px #fff;
+      }
+
+      .input_text {
+        background-color: transparent;
+        border: none;
+        padding: 20px;
+        width: 300px;
+        margin-left: 10px;
+        border: none;
+      }
+
+      .input_text:focus {
+        outline: none;
+      }
+
+      .input_text::placeholder {
+        color: rgb(50, 50, 50);
+        font-weight: 500;
+        font-size: medium;
+        opacity: 1; /* Firefox */
+      }
+
+      .input_text :-ms-.input-placeholder {
+        /* Internet Explorer 10-11 */
+        font-size: medium;
+        color: rgb(50, 50, 50);
+        font-weight: 500;
+      }
+    </style>
+    <link rel="stylesheet" href="..\src\Assets\CSS\loginpageCSS.css" />
+    <form id="forgotpasswordbox" method="post" action="">
+      <h2 style="font-weight: 1000; text-align: center">Recovery</h2>
+      <div class="vertical_center">
+        <h4>Account Recovery Question :</h4>
+        <div class="inputbox">
+          <input
+            type="text"
+            class="input_text"
+            id=""
+            placeholder="What is the name of your first school?"
+            name="recovery"
+          />
+        </div>
+        <input type="submit" class="login_button_2" value="Enter" />
+      </div>
+    </form>
+  </body>
+</html>

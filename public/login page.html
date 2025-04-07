@@ -15,7 +15,7 @@
     </nav>
 
 
-    <form id="loginbox" method="post" action="loginpgPHP.php" >
+    <form id="loginbox" method="post" action="loginpgPHP.php" onsubmit="return validateForm()" >
       <h2 style="font-weight: 1000; text-align: center">Login</h2>
       <div class="vertical_center">
         <div class="inputbox">
@@ -57,13 +57,24 @@
         </div>
         <input type="submit" class="login_button_2" value="Login"> 
         <p style="text-align: center">
-          Don't Have An Account? <a href="#" onclick="disp_reg()">Register</a>
+          Don't Have An Account? <a href="register page.html  " onclick="disp_reg()">Register</a>
         </p>
+
+        <!-- <a href="#" onclick="disp_forgot_password()">Forget Password</a> -->
+
+      </div>
+
+      <a href="forgotpass.html"><button class="forgot_password" onclick="">Forgot Password</button>
+      </a>
+
+
+    </div>
+
       </div>
     </form>
 
 
-    <form id="registerbox" method="post" action="registerPHP.php" >
+    <!-- <form id="registerbox" method="post" action="registerPHP.php" onsubmit="return validateForm()">
       <h2 style="font-weight: 1000; text-align: center">Register</h2>
       <div class="vertical_center">
         <div class="inputbox">
@@ -113,6 +124,10 @@
         <p style="text-align: center;transform: translateX(-19px);">
            Have An Account Already? <a href="#" onclick="disp_log()">Login</a>
         </p>
-     </form>
+     </form> -->
+
+
+    
+
   </body>
 </html>
